@@ -20,7 +20,19 @@ class CartFinalComponent extends Component{
     buyNow(){
         const store = Store.get();
         const cartOrderInfos = Object.entries(store.cart).map((item)=>item[1]);
-        const nowa = NOWA.data[0]        
+        const nowa = NOWA.data[0]
+        
+        try {
+            fbq('track', 'InitiateCheckout', 'cart', Object.entries(store.cart).map(v => v[0]), JSON.stringify(Object.entries(store.cart).map(v => {
+                return {
+                    id: v[1].product.code,
+                    quantity: v[1].jumlah,
+                }
+            })), "IDR", Object.entries(store.cart).map(v => v[1].product.discountNominal ? v[1].jumlah * v[1].product.discountNominal : v[1].jumlah * v[1].price).reduce((prev, curr) => prev + curr, 0));
+            fbq('track', 'Contact');
+        } catch (e) {
+            console.log(e)
+        }
 
         delete store.cart;
         Store.store();

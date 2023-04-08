@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>KEY/MY/YOU - Beauty Shop</title>
-        <!-- Required meta tags always come first -->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="generator"
-            content="KEY/MY/YOU - Beauty Shop">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" lang="id"
-            content="KEY/MY/YOU - Beauty Shop">
-        <meta name="keywords" lang="id"
-            content="KE/MY/YOU, beauty, beauty shop, lipstick, lipstik, mascara, maskara, bedak, kecantikan, toko, toko kecantikan">
-        <meta name="robots" content="index, follow">
-        <link rel="shortcut icon" href="img/icon.jpeg" type="image/x-icon" />
-        <!--Font Awesome-->
-        <link rel="stylesheet" href="dist/font-awesome/css/font-awesome.min.css" />
-        <!-- Custom CSS -->
-        <!--link rel="stylesheet" type="text/css" href="css/main.min.css"-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-            integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/color.css">
-    
-        <!--[if IE]>
+
+<head>
+    <title>KEY/MY/YOU - Beauty Shop</title>
+    <!-- Required meta tags always come first -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="KEY/MY/YOU - Beauty Shop">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" lang="id" content="KEY/MY/YOU - Beauty Shop">
+    <meta name="keywords" lang="id"
+        content="KE/MY/YOU, beauty, beauty shop, lipstick, lipstik, mascara, maskara, bedak, kecantikan, toko, toko kecantikan">
+    <meta name="robots" content="index, follow">
+    <link rel="shortcut icon" href="img/icon.jpeg" type="image/x-icon" />
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="dist/font-awesome/css/font-awesome.min.css" />
+    <!-- Custom CSS -->
+    <!--link rel="stylesheet" type="text/css" href="css/main.min.css"-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/color.css">
+
+    <!--[if IE]>
           <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
           <script src="https://cdn.jsdelivr.net/g/html5shiv@3.7.3"></script>
         <![endif]-->
-        <!--[if lt IE 9]>
+    <!--[if lt IE 9]>
           <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie8.min.css" rel="stylesheet">
         <![endif]-->
-    </head>
+</head>
+
 <body>
     <div class="loader"></div>
     <comp-header></comp-header>
@@ -41,8 +41,9 @@
                         <h1 class="my-4 lead text-pink">KeyMyYou-SHOP</h1>
                         <div id="headingOne">
                             <h5 class="mb-0">
-                                <button class="btn bg-pink text-white btn-block " data-toggle="collapse" data-target="#collapse-category"
-                                    aria-expanded="false" aria-controls="collapse-category">
+                                <button class="btn bg-pink text-white btn-block " data-toggle="collapse"
+                                    data-target="#collapse-category" aria-expanded="false"
+                                    aria-controls="collapse-category">
                                     Kategori
                                 </button>
                             </h5>
@@ -95,7 +96,7 @@
                         </a>
                     </div>
                     <!--div class="row pt-lg-5" id="product-container"-->
-                        <comp-product-list id="productlist-comp"></comp-product-list>
+                    <comp-product-list id="productlist-comp"></comp-product-list>
                     <!--div-->
                 </div>
             </div>
@@ -120,6 +121,27 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script-->
+
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '3622215968040946');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=3622215968040946&ev=PageView&noscript=1" />
+    </noscript>
+
     <script src="js/helper/currency_formatter.js"></script>
     <script src="js/helper/wa-generator.js"></script>
     <script src="js/helper/store.js"></script>
@@ -135,6 +157,7 @@
     <script src="js/component/header.js"></script>
     <script src="js/component/footer.js"></script>
     <script src="js/component/carousel.js"></script>
+    <script src="js/component/social-link.js"></script>
     <script src="js/index.js"></script>
 </body>
 

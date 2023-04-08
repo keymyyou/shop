@@ -38,7 +38,6 @@ class CartEntryComponent extends Component{
     }
     
     template(){
-        console.log(this.attributes)
         return `
         <div class="card h-100">
         <a target="_blank">
